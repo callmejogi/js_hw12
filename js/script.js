@@ -1,14 +1,13 @@
 const n = +prompt(`Type a number:`);
 
-for(i = 2; i <= n; i++){
+for(let i = 2; i <= n; i++){
     
     if(n % i === 0){
-        alert(`Наименьший делитель числа ${n} = ${i}`);
-        break;
-    }else{
-        alert(`Делитель само число: ${n}`);
+        console.log(i);
         break;
     }
+
+    console.log(i)
 
 }
 
