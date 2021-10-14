@@ -1,19 +1,16 @@
 const n = +prompt(`Type a number:`);
 
-prime:
-for(i = 0; i <= n; i++){
+for(i = 2; i <= n; i++){
     
-    for(j = 2; j <= i ; j++){
-        if(n % j === 0){
-            alert(`Наименьший делитель числа ${n} = ${i}`);
-            break prime;
-        }else{
-            alert(`Делитель само число: ${n}`);
-            break prime;
-        }
-
+    if(n % i === 0){
+        alert(`Наименьший делитель числа ${n} = ${i}`);
+        break;
+    }else{
+        alert(`Делитель само число: ${n}`);
+        break;
     }
-};
+
+}
 
 if(n === 1){
     alert(`Делитель само число: ${n}!`);
